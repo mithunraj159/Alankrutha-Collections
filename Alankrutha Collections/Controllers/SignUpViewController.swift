@@ -9,22 +9,33 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    // Hide the Navigation Bar
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        }
 
-    /*
-    // MARK: - Navigation
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+    // Show the Navigation Bar
+            self.navigationController?.setNavigationBarHidden(false, animated: false)
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUpButtonClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
-    */
+}
 
+//MARK :- Basic Functionalities is being implemented in this extension
+extension SignUpViewController {
+    func setUpUI() {
+        signUpButton.roundedViewCorners(cornerRadius: 18.0)
+    }
 }

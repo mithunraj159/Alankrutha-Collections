@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D43379042490A65A009288D8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43379032490A65A009288D8 /* SignUpViewController.swift */; };
+		D479725F2490AFE300E98B07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479725E2490AFE300E98B07 /* Extensions.swift */; };
+		D47972612490B23E00E98B07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47972602490B23E00E98B07 /* Constants.swift */; };
 		DBC18C46248416290081CDBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC18C45248416290081CDBE /* AppDelegate.swift */; };
 		DBC18C48248416290081CDBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC18C47248416290081CDBE /* SceneDelegate.swift */; };
 		DBC18C4A248416290081CDBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC18C49248416290081CDBE /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		D43379032490A65A009288D8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D479725E2490AFE300E98B07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D47972602490B23E00E98B07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DBC18C42248416290081CDBE /* Alankrutha Collections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alankrutha Collections.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC18C45248416290081CDBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBC18C47248416290081CDBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		D479725D2490AFBA00E98B07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D479725E2490AFE300E98B07 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D47972622490B24600E98B07 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D47972602490B23E00E98B07 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		DBC18C39248416290081CDBE = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +87,8 @@
 		DBC18C44248416290081CDBE /* Alankrutha Collections */ = {
 			isa = PBXGroup;
 			children = (
+				D47972622490B24600E98B07 /* Constants */,
+				D479725D2490AFBA00E98B07 /* Extensions */,
 				DBC18C45248416290081CDBE /* AppDelegate.swift */,
 				DBC18C47248416290081CDBE /* SceneDelegate.swift */,
 				D43379052490A693009288D8 /* Controllers */,
@@ -149,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479725F2490AFE300E98B07 /* Extensions.swift in Sources */,
 				DBC18C4A248416290081CDBE /* ViewController.swift in Sources */,
 				DBC18C46248416290081CDBE /* AppDelegate.swift in Sources */,
 				D43379042490A65A009288D8 /* SignUpViewController.swift in Sources */,
 				DBC18C48248416290081CDBE /* SceneDelegate.swift in Sources */,
+				D47972612490B23E00E98B07 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
